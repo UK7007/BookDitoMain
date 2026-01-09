@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact BookDito - Get in touch with our team for inquiries about our bus ticketing platform, operator partnerships, or customer support.">
+    <meta name="keywords" content="contact BookDito, support, customer service, partnership inquiries">
+    <title>Contact Us - BookDito</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <span aria-label="BookDito">📘 BookDito</span>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="for-operators.html">For Operators</a></li>
+                <li><a href="for-travelers.html">For Travelers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p>We're here to help. Reach out to us for inquiries, support, or partnership opportunities.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2" style="gap: var(--spacing-2xl);">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2>Send Us a Message</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--spacing-lg);">
+                            Fill out the form below and we'll get back to you as soon as possible.
+                        </p>
+
+                        <form onsubmit="return validateContactForm(event)" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="form-required">*</span></label>
+                                <input type="text" id="name" name="name" required aria-required="true"
+                                    placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="form-required">*</span></label>
+                                <input type="email" id="email" name="email" required aria-required="true"
+                                    placeholder="your.email@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="form-required">*</span></label>
+                                <select id="subject" name="subject" required aria-required="true">
+                                    <option value="">Select a subject</option>
+                                    <option value="operator">Bus Operator Inquiry</option>
+                                    <option value="traveler">Traveler Support</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="region">Your Region</label>
+                                <select id="region" name="region">
+                                    <option value="">Select your region</option>
+                                    <option value="india">India</option>
+                                    <option value="philippines">Philippines</option>
+                                    <option value="south-africa">South Africa</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <span class="form-required">*</span></label>
+                                <textarea id="message" name="message" required aria-required="true"
+                                    placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send
+                                Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h2>Contact Information</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--spacing-xl);">
+                            Prefer to reach out directly? Here are our contact details for each region.
+                        </p>
+
+                        <div class="card" style="margin-bottom: var(--spacing-lg);">
+                            <h3>🇮🇳 India Office</h3>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Address:</strong><br>
+                                Kasthurinagar, Bangalore<br>
+                                Karnataka 560049, India</p>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Email:</strong> india@bookdito.com</p>
+                            <p><strong>Phone:</strong> 080 279612020</p>
+                        </div>
+
+                        <div class="card" style="margin-bottom: var(--spacing-lg);">
+                            <h3>🇵🇭 Philippines Office</h3>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Address:</strong><br>
+                                Makati City, Metro Manila<br>
+                                1200, Philippines</p>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Email:</strong>
+                                philippines@bookdito.com</p>
+                            <p><strong>Phone:</strong> +63 2 XXXX XXXX</p>
+                        </div>
+
+                        <div class="card" style="margin-bottom: var(--spacing-lg);">
+                            <h3>🇿🇦 South Africa Office</h3>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Address:</strong><br>
+                                Sandton, Johannesburg<br>
+                                Gauteng 2196, South Africa</p>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Email:</strong>
+                                southafrica@bookdito.com</p>
+                            <p><strong>Phone:</strong> +27 11 XXX XXXX</p>
+                        </div>
+
+                        <div class="card">
+                            <h3>General Inquiries</h3>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Email:</strong> info@bookdito.com</p>
+                            <p style="margin-bottom: var(--spacing-sm);"><strong>Support:</strong> support@bookdito.com
+                            </p>
+                            <p><strong>Sales:</strong> sales@bookdito.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Support Hours</h2>
+                    <p>We're here when you need us</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>🇮🇳 India</h3>
+                        <p><strong>Monday - Friday:</strong><br>9:00 AM - 6:00 PM IST</p>
+                        <p><strong>Saturday:</strong><br>10:00 AM - 4:00 PM IST</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🇵🇭 Philippines</h3>
+                        <p><strong>Monday - Friday:</strong><br>9:00 AM - 6:00 PM PHT</p>
+                        <p><strong>Saturday:</strong><br>10:00 AM - 4:00 PM PHT</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🇿🇦 South Africa</h3>
+                        <p><strong>Monday - Friday:</strong><br>9:00 AM - 5:00 PM SAST</p>
+                        <p><strong>Saturday:</strong><br>10:00 AM - 2:00 PM SAST</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: var(--spacing-xl);">
+                    <p style="color: var(--text-secondary); font-size: var(--font-size-lg);">
+                        <strong>Emergency Support:</strong> For urgent operator or technical issues, email <a
+                            href="mailto:support@bookdito.com">support@bookdito.com</a> with "URGENT" in the subject
+                        line.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions</p>
+                </div>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="card" style="margin-bottom: var(--spacing-md);">
+                        <h3>How quickly will I receive a response?</h3>
+                        <p>We aim to respond to all inquiries within 24 business hours. Urgent operator or technical
+                            issues receive priority attention.</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: var(--spacing-md);">
+                        <h3>I'm a bus operator. How do I get started?</h3>
+                        <p>Fill out the contact form selecting "Bus Operator Inquiry" as your subject. Our sales team
+                            will reach out to schedule a demo and discuss onboarding.</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: var(--spacing-md);">
+                        <h3>I need help with my booking. What should I do?</h3>
+                        <p>For booking-related queries, select "Traveler Support" in the form above, or email
+                            support@bookdito.com with your booking reference number.</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: var(--spacing-md);">
+                        <h3>Do you offer technical integration support?</h3>
+                        <p>Yes! Select "Technical Support" or "Partnership Opportunity" in the form, and our technical
+                            team will assist with API integrations and technical requirements.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Can I visit your office in person?</h3>
+                        <p>Yes! We welcome office visits. Please email or call your regional office in advance to
+                            schedule an appointment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Stay Connected</h2>
+                    <p>Follow us for updates, news, and travel tips</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div class="social-links" style="justify-content: center; font-size: var(--font-size-3xl);">
+                        <a href="#" aria-label="Facebook"
+                            style="width: 60px; height: 60px; font-size: var(--font-size-3xl);">📘</a>
+                        <a href="#" aria-label="Twitter"
+                            style="width: 60px; height: 60px; font-size: var(--font-size-3xl);">🐦</a>
+                        <a href="#" aria-label="LinkedIn"
+                            style="width: 60px; height: 60px; font-size: var(--font-size-3xl);">💼</a>
+                        <a href="#" aria-label="Instagram"
+                            style="width: 60px; height: 60px; font-size: var(--font-size-3xl);">📷</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BookDito</h4>
+                    <p>Modern bus ticketing and travel technology platform serving operators and travelers worldwide.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="for-operators.html">For Operators</a></li>
+                        <li><a href="for-travelers.html">For Travelers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> BookDito. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
